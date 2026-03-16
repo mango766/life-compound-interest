@@ -1,0 +1,333 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>3.2 原子习惯：1%的改变如何重塑人生 - 人生复利</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="从投资智慧到人生成长的五维心法">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-2459343d.css">
+        <link rel="stylesheet" href="../css/chrome-ae938929.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../custom-4b455ba5.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-e26d1a65.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-2452b032.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">人生复利</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="32-原子习惯1的改变如何重塑人生"><a class="header" href="#32-原子习惯1的改变如何重塑人生">3.2 原子习惯：1%的改变如何重塑人生</a></h1>
+<hr>
+<h3 id="英国自行车队的奇迹"><a class="header" href="#英国自行车队的奇迹">英国自行车队的奇迹</a></h3>
+<p>2003年，英国自行车队聘请了一个新的绩效总监——戴夫·布雷斯福德。当时的英国自行车队是一个笑话。在之前的一百年里，英国自行车手只在奥运会上拿过一枚金牌。自行车制造商甚至不愿意把产品卖给他们，因为怕影响品牌形象。</p>
+<p>布雷斯福德上任后，提出了一个听起来平淡无奇的策略：<strong>在自行车运动的每一个可以改进的环节上，提升1%。</strong></p>
+<p>他们把自行车座垫做得更舒适一点。把轮胎的橡胶配方调得稍微黏一点以增加抓地力。让骑手穿电热短裤来保持肌肉温度。用酒精擦拭车轮轴承来减少微小的摩擦。请来外科医生教骑手如何正确洗手以减少感冒的概率。测试不同面料的骑行服以找到空气阻力最小的版本。甚至把运动员的枕头和床垫带到比赛场地，以确保最佳的睡眠质量。</p>
+<p>每一个改进单独看都微不足道——1%的提升，谁会在意？</p>
+<p>但当你把几十个1%叠加在一起时，效果是惊人的。</p>
+<p>2008年北京奥运会，英国自行车队拿下了60%的自行车金牌。2012年伦敦奥运会，他们打破了九项奥运纪录和七项世界纪录。从2007年到2017年，英国自行车手赢得了178个世界冠军、66枚奥运和残奥会金牌，还五次赢得环法自行车赛总冠军。</p>
+<p>从世界笑柄到统治级力量，用了不到十年。</p>
+<p>詹姆斯·克莱尔在他的畅销书《原子习惯》中用这个案例作为开篇，然后提出了一个改变了数百万人思维方式的核心观点：</p>
+<p><strong>你不需要翻天覆地的改变。你只需要每天1%的进步，持续做下去。</strong></p>
+<p>每天进步1%，一年后你不是进步了365%——因为复利是指数型的——你是进步了3778%。翻了37倍。</p>
+<p>每天退步1%，一年后你不是退步了365%，你是只剩下了原来的3%。几乎归零。</p>
+<p>两者的起点相同，差异仅仅是每天1%的方向。但一年后，它们之间的差距是<strong>1260倍</strong>。</p>
+<hr>
+<h3 id="为什么目标不重要系统才重要"><a class="header" href="#为什么目标不重要系统才重要">为什么目标不重要，系统才重要</a></h3>
+<p>克莱尔在《原子习惯》中提出了一个反直觉的论断：</p>
+<p>“你不会上升到你目标的水平，你会下沉到你系统的水平。”</p>
+<p>什么意思？</p>
+<p>每个人都有目标。想减肥的人的目标是“瘦20斤“。想变富的人的目标是“赚100万“。想学好英语的人的目标是“雅思考7分“。</p>
+<p>但设定目标几乎是没有区别的——因为成功的人和失败的人拥有相同的目标。每一个参加奥运会的选手的目标都是赢得金牌，但只有一个人能赢。</p>
+<p>真正区分他们的不是目标，而是<strong>系统</strong>——他们为了接近目标而每天执行的那些具体的、可重复的行为。</p>
+<p>一个想减肥的人，如果他的“系统“是“每天用走路代替坐电梯，午餐用沙拉代替外卖，晚上九点后不吃东西“，他几乎一定能瘦下来——即使他从来没设定过“瘦20斤“的目标。</p>
+<p>一个想变富的人，如果他的“系统“是“每月收入的20%自动转入指数基金账户，每周花两小时研究一家公司的财报，每天花三十分钟阅读商业和经济相关的内容“，他的财富几乎一定会持续增长——即使他从来没设定过“赚100万“的目标。</p>
+<p><strong>目标决定了你的方向，但系统决定了你能走多远。</strong></p>
+<p>这和复利的关系是什么？</p>
+<p>复利需要<strong>持续的、一致的输入</strong>。而“系统“——也就是你的日常习惯——正是提供这种持续输入的载体。</p>
+<p>你不可能靠一次冲刺来获得复利。你不可能这个月读十本书、下个月一本不读，然后指望获得“知识的复利“。复利需要连续性，而连续性来自习惯——那些你不需要依靠意志力就能自动执行的日常行为。</p>
+<hr>
+<h3 id="习惯的四个法则"><a class="header" href="#习惯的四个法则">习惯的四个法则</a></h3>
+<p>克莱尔把习惯的形成分解为四个步骤，并为每一步提供了一个可操作的法则：</p>
+<p><strong>第一步：提示（Cue）→ 法则：让它显而易见。</strong></p>
+<p>习惯的触发器是环境中的某个提示。如果你想养成每天阅读的习惯，把书放在枕头旁边，而不是塞在书架上。如果你想养成每天记账的习惯，把记账App放在手机首屏，而不是藏在第三页的文件夹里。</p>
+<p><strong>让好习惯的触发器无处不在，让坏习惯的触发器消失不见。</strong></p>
+<p>想少看手机？把手机放在另一个房间充电，而不是放在枕边。想多喝水？在你的办公桌上放一个大水瓶，让它随时出现在你的视线里。</p>
+<p><strong>第二步：渴望（Craving）→ 法则：让它有吸引力。</strong></p>
+<p>人类的大脑不会主动去做“应该做“的事，而是会去做“想做“的事。所以你需要让好习惯变得有吸引力。</p>
+<p>方法之一是“习惯捆绑“（Habit Bundling）：把一个你需要做的习惯和一个你想做的活动绑在一起。比如：只有在跑步机上的时候才能听自己最喜欢的播客。只有在完成了三十分钟的阅读之后才能打开社交媒体。</p>
+<p><strong>第三步：反应（Response）→ 法则：让它简单。</strong></p>
+<p>习惯之所以能持续，是因为它足够简单，不需要消耗太多的意志力。克莱尔提出了“两分钟规则“：<strong>任何新习惯的初始版本都应该可以在两分钟内完成。</strong></p>
+<p>“每天跑步”→ 简化为“每天穿上跑鞋走出门“。
+“每天阅读一小时”→ 简化为“每天读一页书“。
+“每天写作”→ 简化为“每天写一句话“。</p>
+<p>听起来荒谬是吗？一页书有什么用？一句话能叫写作吗？</p>
+<p>但克莱尔的洞见是：<strong>习惯的关键不在于你做了多少，而在于你是否“出现“了。</strong> 只要你开始了——穿上了跑鞋，翻开了书，打开了文档——大多数时候你会做的比“最低限度“多得多。“穿上跑鞋走出门“的人，大多数时候会跑起来。“读一页书“的人，大多数时候会读十页。</p>
+<p>而即使你某天真的只做了最低限度——只穿上跑鞋走到门口就回来了，只读了一页就合上了——你依然维持了<strong>连续性</strong>。你没有中断这个习惯。对于复利来说，不中断比做多少更重要。</p>
+<p><strong>第四步：奖赏（Reward）→ 法则：让它令人满足。</strong></p>
+<p>大脑需要即时反馈来强化行为。如果一个习惯没有让你感到任何满足感，你很难长期坚持。</p>
+<p>可视化是一个强大的即时反馈工具。用日历标记你每天完成习惯的日子——看着一连串的打勾标记不断增长，本身就是一种满足感。杰瑞·宋飞有一个著名的“不要打断链条“方法：他每天写完喜剧段子就在日历上画一个X，当X连成了一条长链之后，“不打断这条链“本身就成了最强的动力。</p>
+<hr>
+<h3 id="理查德泰勒的助推环境设计的力量"><a class="header" href="#理查德泰勒的助推环境设计的力量">理查德·泰勒的助推：环境设计的力量</a></h3>
+<p>如果克莱尔的《原子习惯》告诉你“如何改变自己“，那么理查德·泰勒的“助推“理论告诉你“如何让环境帮你改变自己“。</p>
+<p>泰勒是2017年诺贝尔经济学奖得主，他的核心洞见是：<strong>人类的行为不是由“理性选择“驱动的，而是被“选择架构“塑造的——也就是说，选项是怎么呈现给你的，会极大地影响你选什么。</strong></p>
+<p>最经典的例子是器官捐赠率。在实行“默认同意“（opt-out）的国家，器官捐赠率通常超过90%。在实行“默认不同意“（opt-in）的国家，捐赠率通常低于20%。人们的态度没有根本差异——差异在于默认选项是什么。大多数人懒得去改变默认设置。</p>
+<p>这个原理在投资中的应用是显而易见的：</p>
+<p><strong>把定投设为自动扣款。</strong> 不要依赖自己“每个月记得往基金账户转钱“——你会忘记，或者在某个月觉得“这个月紧张就算了“。设成自动扣款，钱在你看到之前就已经被投进去了。泰勒把这种策略叫做SMarT（Save More Tomorrow）——明天多存一点。</p>
+<p><strong>把退休储蓄设为默认加入。</strong> 泰勒和桑斯坦的研究表明，当公司把401(k)退休金计划从“默认不加入“改为“默认加入“时，员工的参与率从49%飙升到了86%。人们不是不想存钱，他们只是需要一个助推。</p>
+<p>在人生中，助推的原理同样强大：</p>
+<ul>
+<li>想少吃垃圾食品？<strong>不要把它放在家里。</strong> 当你想吃零食的时候需要专门出门去买，大多数时候你会懒得去。</li>
+<li>想多运动？<strong>把运动服放在枕边。</strong> 早上醒来第一眼看到的就是运动服，穿上它的概率远大于它藏在衣柜深处。</li>
+<li>想少花时间在手机上？<strong>把社交媒体App从手机首屏移除</strong>，换上阅读App或笔记App。你每天无意识地打开首屏几十次，放什么在那里决定了你的时间去向。</li>
+</ul>
+<p>泰勒的核心信息是：<strong>不要和人性对抗，要顺应人性。</strong> 与其靠意志力去做“应该做但不想做“的事，不如改变环境，让“应该做“的事变成最容易做的事。</p>
+<hr>
+<h3 id="复利型习惯-vs-消耗型习惯"><a class="header" href="#复利型习惯-vs-消耗型习惯">复利型习惯 vs. 消耗型习惯</a></h3>
+<p>不是所有习惯都具有复利属性。</p>
+<p>有些习惯是“复利型“的——你做的越多，效果越好，而且今天的积累会增强明天的效果：</p>
+<ul>
+<li>阅读（知识复利）</li>
+<li>写作（思考和表达能力复利）</li>
+<li>运动（健康复利）</li>
+<li>深度社交（关系和信任复利）</li>
+<li>持续投资（财富复利）</li>
+<li>冥想和反思（自我认知复利）</li>
+</ul>
+<p>有些习惯是“消耗型“的——它们提供即时满足，但不产生任何长期积累，甚至在消耗你的“本金“：</p>
+<ul>
+<li>无目的地刷社交媒体（消耗时间和注意力）</li>
+<li>过度饮酒（消耗健康）</li>
+<li>冲动消费（消耗财富）</li>
+<li>八卦和抱怨（消耗关系和声誉）</li>
+<li>通宵加班而不休息（短期产出但消耗长期健康）</li>
+</ul>
+<p>你不需要成为一个圣人——消耗型习惯在适度的情况下也是生活的一部分。但你需要确保你的“复利型习惯“在总量上远超“消耗型习惯“。</p>
+<p>一个简单的自检方法：回顾你过去一周的时间分配，把每一项活动标记为“复利型“或“消耗型“。如果消耗型活动占了你醒着的时间的一半以上，你的人生雪球不是在变大，而是在融化。</p>
+<hr>
+<h3 id="从原子到宇宙"><a class="header" href="#从原子到宇宙">从原子到宇宙</a></h3>
+<p>克莱尔把他的书叫做“原子习惯“，因为“原子“是构成宇宙万物的最小单位。同样，微小的日常习惯是构成人生成就的最小单位。</p>
+<p>你不需要一次改变十个习惯。你只需要从一个开始。</p>
+<p>选一个你一直想养成但总是失败的习惯，用两分钟规则简化它，用环境设计让它变得容易，用可视化追踪让它变得满足。</p>
+<p>然后，只做这一件事。做一个月。</p>
+<p>当这一个习惯变得像刷牙一样自动时，再加一个。</p>
+<p>一年后你可能只增加了四五个新习惯，但这四五个习惯每天都在运行，每天都在为你的人生雪球粘上一层新的雪。十年后回头看，这些微小的原子会汇聚成一个你今天无法想象的宇宙。</p>
+<p>这就是复利在行为层面的终极表达：<strong>不是做一件大事，而是持续做很多小事——让时间把小事变成大事。</strong></p>
+<hr>
+<p><em>本节核心观点：目标决定方向，但系统（日常习惯）决定你能走多远。用“两分钟规则“让新习惯简单到无法拒绝，用环境设计（助推）让好行为成为默认选项。最关键的不是每天做多少，而是不中断。复利在习惯层面的载体，就是那些你每天都在做的、具有积累属性的微小行动。</em></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../ch03/s01.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../ch03/s03.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../ch03/s01.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../ch03/s03.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-c2a407aa.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

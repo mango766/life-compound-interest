@@ -1,0 +1,372 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>4.2 安全边际：永远留有余地 - 人生复利</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="从投资智慧到人生成长的五维心法">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-2459343d.css">
+        <link rel="stylesheet" href="../css/chrome-ae938929.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../custom-4b455ba5.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-e26d1a65.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-2452b032.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">人生复利</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="42-安全边际永远留有余地"><a class="header" href="#42-安全边际永远留有余地">4.2 安全边际：永远留有余地</a></h1>
+<blockquote>
+<p>“投资的秘诀，一言以蔽之，就是安全边际。”
+—— 本杰明·格雷厄姆</p>
+</blockquote>
+<hr>
+<h3 id="一座桥的故事"><a class="header" href="#一座桥的故事">一座桥的故事</a></h3>
+<p>1940年11月7日，美国华盛顿州的塔科马海峡大桥在通车仅仅四个月后，便在一场并不算猛烈的风暴中剧烈扭曲、最终坍塌。这座被当时的工程师引以为傲的悬索桥，设计时追求的是轻盈与优美——用最少的材料，达到刚好够用的强度。结果，一阵持续的侧风以桥体的自然频率反复施压，共振效应越来越大，最终超越了那条“刚好够用“的极限。</p>
+<p>大桥坍塌的画面被摄影机完整记录下来，成为工程史上最著名的反面教材。</p>
+<p>从那以后，全世界的桥梁工程师都学到了一个深刻的教训：设计承重量必须是实际需求的数倍。一座需要承载一万吨车流的桥，承重设计往往要达到三万吨甚至更高。这不是因为工程师不会算数，也不是因为他们过于悲观——而是因为他们深深明白一个道理：<strong>现实世界中，永远存在你无法预测的额外压力。</strong></p>
+<p>可能是一场百年不遇的暴风雪，可能是一次突发的地震，可能是某个超载的卡车车队同时经过，也可能是金属在数十年的热胀冷缩中产生了肉眼看不见的疲劳裂纹。工程师无法预测这些具体的风险何时到来、以何种形式出现，但他们知道这些风险一定会来。所以，他们给自己留了一个巨大的缓冲区间。</p>
+<p>这个缓冲区间，在工程学中叫“安全系数“。</p>
+<p>而在投资的世界里，它有一个更广为人知的名字——<strong>安全边际</strong>（Margin of Safety）。</p>
+<p>提出这个概念的人，是价值投资的鼻祖本杰明·格雷厄姆。他在《聪明的投资者》一书中用整整一章来论述这个概念，并在最后总结说，如果要把稳健投资的秘诀浓缩成一个词，那就是“安全边际“。</p>
+<p>但安全边际的智慧远远不止于投资。它是一种面对不确定性的根本态度，是一种承认自己不可能全知全能之后的谦逊选择。从管理金钱到经营人生，从规划职业到维护健康，安全边际的思想无处不在。</p>
+<p>让我们先回到投资的世界，看看这个概念是如何被一代又一代的大师发展和应用的。</p>
+<hr>
+<h3 id="格雷厄姆的发现价格与价值之间的护城河"><a class="header" href="#格雷厄姆的发现价格与价值之间的护城河">格雷厄姆的发现：价格与价值之间的护城河</a></h3>
+<p>本杰明·格雷厄姆在20世纪30年代提出安全边际的概念，这绝非偶然。在此之前，他刚刚经历了1929年大崩盘和随后的大萧条。那场灾难几乎摧毁了他的投资事业——他管理的资金在1929年到1932年间损失了约70%。</p>
+<p>这段痛苦的经历迫使格雷厄姆深刻反思：<strong>投资中最重要的事情，不是赚多少钱，而是不亏钱。</strong></p>
+<p>由此，他提出了一个看似简单却极其深刻的投资原则：只在股票的市场价格显著低于其内在价值时才买入。这个差距——价格与价值之间的空间——就是安全边际。</p>
+<p>举一个直观的例子。假设你经过仔细分析，判断一家公司的内在价值是每股100元。如果市场现在的报价是95元，你应该买入吗？格雷厄姆会说：不要。因为你的估值可能有误，100元的判断也许偏高了；而且市场可能还会继续下跌，95元未必是底部。</p>
+<p>但如果市场报价跌到了60元呢？这时候，即使你的估值高估了20%——实际内在价值只有80元——你仍然是在以低于价值的价格买入。你有40%的缓冲空间来吸收你判断中的误差。这40%，就是你的安全边际。</p>
+<p>格雷厄姆之所以如此强调安全边际，是基于两个深刻的认知：</p>
+<p><strong>第一，人的判断一定会犯错。</strong> 内在价值的估算涉及对未来的预测——未来的收入、未来的利润、未来的增长率、未来的利率环境——而未来本质上是不可精确预测的。你的估值模型再精密，也不过是对未来的一种有根据的猜测。既然猜测一定会有偏差，你就需要为这种偏差留下足够的容错空间。</p>
+<p><strong>第二，市场有时候会疯狂。</strong> 格雷厄姆用了一个著名的比喻——“市场先生”。他说，想象市场是你的一个商业伙伴，名叫“市场先生“。他每天都会来找你，报出一个价格，提议以这个价格买入你手中的股份或者卖给你他的股份。问题是，市场先生的情绪极不稳定。有时候他兴高采烈，报出的价格高得离谱；有时候他又惶恐绝望，报出的价格低得不可思议。</p>
+<p>聪明的投资者不会被市场先生的情绪带着走。相反，他会耐心等待——等到市场先生极度悲观、报出的价格远远低于内在价值时，才从容买入。这时候的安全边际是最大的。</p>
+<p>格雷厄姆甚至给出了具体的操作指引：他偏好购买那些市场价格低于公司净流动资产价值（也就是流动资产减去所有负债）的股票。换句话说，即使把公司关门清算，仅凭其现金和可快速变现的资产，都比当前的股价值钱。在这种极端的安全边际下，即使公司的经营前景完全不如预期，投资者也几乎不会遭受永久性的资本损失。</p>
+<p>这种方法在大萧条之后的几十年里为格雷厄姆带来了极为出色的投资回报。但随着市场的发展，一个新的问题出现了：真正符合如此严苛条件的股票越来越少。</p>
+<p>这时候，格雷厄姆最杰出的学生登场了。</p>
+<hr>
+<h3 id="巴菲特的进化安全边际不只是低价格"><a class="header" href="#巴菲特的进化安全边际不只是低价格">巴菲特的进化：安全边际不只是低价格</a></h3>
+<p>沃伦·巴菲特是格雷厄姆在哥伦比亚大学的学生，也是他投资生涯中唯一给出A+成绩的学生。巴菲特对格雷厄姆的安全边际思想不仅是继承，更是一次深刻的进化。</p>
+<p>巴菲特早年严格遵循格雷厄姆的方法，专门寻找价格远低于清算价值的“烟蒂股“——就像地上的烟蒂，虽然不好看，但还能免费吸最后一口。这种方法确实有效，但巴菲特渐渐发现了它的局限性。</p>
+<p>转折点来自他的搭档查理·芒格。芒格对巴菲特说了一句影响深远的话：“以合理的价格买入一家优秀的公司，远远好过以低廉的价格买入一家平庸的公司。”</p>
+<p>这句话重新定义了安全边际的含义。在格雷厄姆的框架里，安全边际主要体现在“价格足够低“。但芒格和巴菲特认为，安全边际还有另一个维度——<strong>公司本身的质量</strong>。</p>
+<p>一家拥有强大竞争优势的公司（巴菲特称之为“护城河“），其内在价值会随着时间的推移不断增长。比如可口可乐，它的品牌、全球分销网络和消费者的习惯性购买构成了极深的护城河。即使你在买入时的价格看起来不是特别“便宜“，但只要公司的内在价值每年以10%、15%的速度增长，那么时间本身就会为你创造安全边际。今天看起来只有10%折扣的价格，五年后回头看可能已经是50%的折扣了。</p>
+<p>相反，一家平庸的公司，即使你以极低的价格买入，它的内在价值可能在逐年缩水。你以为自己买到了巨大的安全边际，但随着时间推移，价值不断下降，当初的安全边际反而越来越薄，最终消失殆尽。</p>
+<p>巴菲特1988年大举买入可口可乐的股票就是这一理念的经典实践。当时的可口可乐股价约为每股5.2美元（拆股调整后），市盈率约为15倍——在格雷厄姆的标准下，这算不上“便宜“。但巴菲特看到的是可口可乐无与伦比的品牌护城河、全球扩张的潜力、以及极高的资本回报率。他投入了约10亿美元——当时伯克希尔·哈撒韦总资产的很大一部分。</p>
+<p>结果呢？到今天，伯克希尔仅从可口可乐获得的年度股息收入就已经超过了当初的全部投资本金。这笔投资的回报是数十倍的。</p>
+<p>巴菲特用这次投资告诉世人：**安全边际不是一个静态的概念，而是一个动态的概念。**它不仅仅来自于买入价格的折扣，还来自于企业品质随时间带来的价值增长。一家优秀公司持续增长的内在价值，就像桥梁不断被加固的承重结构——即使外部环境恶化，它也能承受更大的压力。</p>
+<p>这就是为什么巴菲特说：“时间是优秀公司的朋友，平庸公司的敌人。”</p>
+<hr>
+<h3 id="达利欧的现金流冗余永远不要被逼到墙角"><a class="header" href="#达利欧的现金流冗余永远不要被逼到墙角">达利欧的现金流冗余：永远不要被逼到墙角</a></h3>
+<p>如果说格雷厄姆和巴菲特教会我们在“买入“的时候要留有余地，那么桥水基金的创始人瑞·达利欧则教会我们另一个同样重要的维度：<strong>在“持有“的过程中也要留有余地。</strong></p>
+<p>达利欧在《原则》一书中反复强调一个理念：永远保持足够的现金流冗余，确保在最坏的情况下也不会被迫在错误的时机做出错误的决定。</p>
+<p>他的这个认知同样源自切身之痛。1982年，年轻气盛的达利欧公开预测美国经济将陷入衰退，并据此进行了大规模的押注。结果，他错了。美国经济不但没有衰退，反而进入了一轮长期繁荣。达利欧的公司几乎破产，他不得不解雇所有员工，一度穷困到需要向父亲借4000美元来支付家庭开支。</p>
+<p>这次失败让达利欧刻骨铭心地理解了一个道理：<strong>在投资中，最致命的不是判断错误，而是在判断错误的同时没有留下足够的退路。</strong></p>
+<p>如果你把全部资金都投入了市场，当市场突然暴跌30%时会发生什么？你可能面临追加保证金的通知，可能面临生活开支的压力，可能面临债务到期的催款。在这些压力下，你会被迫在最低点卖出资产——而这恰恰是你最不应该卖出的时候。</p>
+<p>达利欧因此发展出了他的“现金流冗余“原则。这个原则的核心是：在任何时候，你的现金储备都应该足以覆盖最坏情景下的支出，并且还有富余。具体来说：</p>
+<ul>
+<li>手头的现金要能覆盖至少12-18个月的固定支出</li>
+<li>投资组合中要始终保留一部分高流动性资产，以便随时应对突发情况</li>
+<li>永远不要让自己的债务水平高到在极端市场条件下可能引发强制平仓的程度</li>
+</ul>
+<p>达利欧有一句名言：“我害怕犯错，我害怕破产，我害怕被逼入绝境。这种恐惧是健康的，因为它让我始终保持充足的准备。”</p>
+<p>在2008年金融危机中，无数曾经辉煌的投资机构和个人投资者因为缺乏现金流冗余而崩溃。雷曼兄弟的杠杆率高达30倍以上，意味着资产价值只需要下跌3%就会资不抵债。当市场暴跌时，他们根本没有任何缓冲空间。而达利欧的桥水基金，由于始终保持着充足的现金储备和谨慎的杠杆水平，不仅安然度过了危机，甚至在2008年取得了正收益。</p>
+<p>这给我们一个重要的启示：安全边际不仅仅是一个“买入时“的概念，它是一个贯穿整个投资过程的原则。<strong>你不仅要在买入时留有余地，还要在持有的每一天都留有余地。</strong></p>
+<hr>
+<h3 id="投资中的三层安全边际"><a class="header" href="#投资中的三层安全边际">投资中的三层安全边际</a></h3>
+<p>综合格雷厄姆、巴菲特和达利欧的思想，我们可以构建一个投资中的“三层安全边际“体系：</p>
+<p><strong>第一层：估值的安全边际——只在价格显著低于价值时买入</strong></p>
+<p>这是格雷厄姆最原始的安全边际概念。在实际操作中，这意味着你需要先独立评估一项资产的内在价值，然后耐心等待市场给出一个足够大的折扣。</p>
+<p>这个“足够大“的具体标准因人而异。格雷厄姆要求至少30%-50%的折扣。巴菲特的标准可能更灵活——对于极高质量的公司，20%的折扣可能就够了；对于不确定性更大的投资，他可能需要50%以上的折扣。</p>
+<p>关键不在于具体的数字，而在于一种心态：**你是在以“打折“的价格买入真正有价值的东西，而不是在赌价格会上涨。**如果你买入的理由是“这个股票会涨“，你实际上是在投机；如果你买入的理由是“这家公司的价值远高于当前的价格“，你才是在投资。</p>
+<p>有一位投资者曾经这样比喻：去超市购物时，你会因为一件商品打了五折而高兴地买入。但在股市中，当一家好公司的股价打了五折时，大多数人反而恐惧得不敢买入。这种矛盾的行为，恰恰是大多数人在投资中赚不到钱的原因。</p>
+<p><strong>第二层：仓位的安全边际——永远不要满仓</strong></p>
+<p>这一层安全边际来自达利欧的现金流冗余思想。即使你对某一笔投资充满信心，也不要把全部身家押上去。永远保留一部分现金和高流动性资产。</p>
+<p>这样做有两个重要的好处。第一，当市场突然出现更好的机会时，你手中有弹药可以抓住。历史上很多投资大师最辉煌的一笔投资，都是在市场恐慌、别人都被迫卖出时，他们手中恰好有现金可以买入。第二，当意外的风险降临时，你不会被迫卖出——你可以从容应对，等待风暴过去。</p>
+<p>一个经验法则是：在任何时候，至少保持投资组合中20%-30%的现金或现金等价物。在市场估值偏高时，这个比例可以更高。只有当市场极度恐慌、到处都是“打骨折“的好公司时，才可以考虑把仓位提高到更高的水平。</p>
+<p>有人可能会问：一直持有那么多现金，不会错过很多收益吗？确实会。但投资的第一原则永远是不亏钱——或者说，不要让自己陷入无法挽回的境地。现金就是你的保险费。你可能因为持有现金而少赚了一些，但你永远不会因为持有现金而被逼入绝境。</p>
+<p><strong>第三层：分散的安全边际——不把所有鸡蛋放在一个篮子里</strong></p>
+<p>分散投资是安全边际的第三层保障。即使你对某一笔投资的分析无比正确，即使你买入的价格有巨大的折扣，即使你保留了充足的现金——仍然有可能出现你完全没有预料到的“黑天鹅“事件，导致某一个特定的投资标的遭受毁灭性的打击。</p>
+<p>想想安然公司。在它暴雷之前，无数分析师都给它最高评级。想想2020年初的瑞幸咖啡，财务造假的消息一出，股价一夜之间蒸发了80%以上。没有任何事前的分析能够完全预测这类事件。</p>
+<p>分散投资的本质，就是承认我们不可能对任何单一投资标的有100%的把握。通过在不同的公司、不同的行业、不同的资产类别（股票、债券、房产、现金）之间分散配置，即使某一个投资彻底失败，也不会对你的整体财务状况造成毁灭性的影响。</p>
+<p>需要注意的是，分散不是简单地买很多不同的股票。如果你买了十只银行股，你并没有真正分散——因为银行股往往会同涨同跌。真正的分散要跨行业、跨资产类别、甚至跨地区。达利欧的“全天候策略“就是这种思想的极致体现——他的投资组合被设计成在各种经济环境下（增长、衰退、通胀、通缩）都能保持稳健。</p>
+<p>这三层安全边际——估值、仓位、分散——构成了投资中的“三重保险“。任何一层被突破时，其他两层仍然能保护你不受致命伤害。就像那座设计了数倍承重量的桥梁，即使遇到超出预期的压力，它依然能够屹立不倒。</p>
+<hr>
+<h3 id="人生中的安全边际"><a class="header" href="#人生中的安全边际">人生中的安全边际</a></h3>
+<p>现在，让我们把目光从投资转向更广阔的人生。你会发现，安全边际的智慧同样适用于生活的方方面面——甚至，可能更加重要。</p>
+<p>因为在投资中，犯错了你损失的是金钱，而金钱可以再赚。但在人生的某些关键领域，犯错的代价可能是你无法承受的。</p>
+<p><strong>财务安全边际：你的“睡得着觉“基金</strong></p>
+<p>很多理财书籍都会建议你保持一笔应急基金，通常是6-12个月的生活费。这个建议听起来老生常谈，但真正做到的人却少之又少。</p>
+<p>为什么是6-12个月？因为这大致是一个人在遭遇突发事件后重新站稳脚跟所需要的时间。被裁员了，找到新工作通常需要3-6个月。生了一场大病，治疗和恢复可能需要半年到一年。家庭遭遇意外变故，处理善后事宜也需要数月时间。</p>
+<p>这笔应急基金的存在，给你带来的不仅仅是财务上的保障，更是心理上的安全感。当你知道即使明天失去工作，你的生活也不会立刻陷入危机时，你会做出更好的决策。你不会因为恐惧失业而在不喜欢的工作中忍气吞声，不会因为急需用钱而在投资上冒不必要的风险，不会因为经济压力而在人际关系中委曲求全。</p>
+<p>达利欧在谈到个人财务时说过一段意味深长的话：“有些人拼命想要变得富有，结果在过程中承受了让自己破产的风险。保持足够的储蓄缓冲，不是保守，而是让你能长期参与这场游戏的前提。”</p>
+<p>我认识一位创业者朋友，在创业之前，他花了三年时间积攒了足够两年生活费的存款。当他的创业项目在第一年遇到严重困难、收入几乎为零时，这笔存款让他能够保持冷静，做出理性的判断，最终在第二年找到了正确的方向，公司开始盈利。而他的另一位创业伙伴，由于没有这样的储备，在第八个月就因为经济压力被迫放弃了项目。</p>
+<p><strong>时间安全边际：呼吸的空间</strong></p>
+<p>在现代社会中，忙碌被当作一种美德。很多人把日程表排得满满当当，恨不得每一分钟都被“有效利用“。但这种做法实际上是在以零安全边际运行——任何一个小小的意外——一个临时会议、一场交通拥堵、一次身体不适——都足以让你的整个日程崩溃，产生连锁反应。</p>
+<p>聪明的时间管理者懂得给自己留出缓冲时间。他们会在两个会议之间留出15-30分钟的间隔，会在截止日期之前给自己设定一个更早的个人截止日期，会在每周留出至少半天的“空白时间“来处理意外事务或者单纯地休息与思考。</p>
+<p>这不是“浪费时间“，而是投资于抗脆弱性。就像桥梁的额外承重量不是“浪费材料“一样，时间的缓冲不是“浪费时间“——它是确保你的生活系统在面对不可预测的压力时不会崩溃的必要条件。</p>
+<p>塔勒布在《反脆弱》中提到一个有趣的观点：古罗马人的成功很大程度上归功于他们的“闲暇“（otium）文化。那些看似“无所事事“的时间，实际上是思考、创造和恢复精力的时间。没有这些时间，思想就不会有突破，身体就不会有恢复。</p>
+<p>试着在你的一周中留出10%-20%的“未安排时间“。你会发现，这些时间不仅不会“浪费“，反而会成为你最有生产力的时间——因为它们给了你喘息、反思和调整方向的机会。</p>
+<p><strong>健康安全边际：身体是最大的本金</strong></p>
+<p>在投资中，本金的安全是第一位的，因为没有了本金，再高的收益率也毫无意义。在人生中，你的身体就是你最大的“本金“。</p>
+<p>然而，很多人对待自己的健康方式，就像一个满仓加杠杆的投机者——平时不锻炼、不注意饮食、不定期体检、睡眠不足、压力过大，却指望在出了问题之后再去“抢救“。这就像一个投资者把全部身家投入一只高风险股票，然后祈祷它不要跌。</p>
+<p>健康的安全边际意味着：在你还健康的时候就开始投资于健康。规律的运动、合理的饮食、充足的睡眠、定期的体检——这些就是你的“健康应急基金“。它们不会让你永远不生病，但它们会大大降低重大疾病的概率，缩短你从疾病中恢复的时间，提高你在面对健康挑战时的韧性。</p>
+<p>想一想，一个每周坚持运动三次、饮食均衡、睡眠充足的人，和一个久坐不动、暴饮暴食、长期熬夜的人，面对同样一次流感，谁恢复得更快？面对同样的工作压力，谁更不容易崩溃？面对同样的重大疾病诊断，谁的身体基础更好、治疗效果更佳？</p>
+<p>答案显而易见。健康的安全边际不是在生病之后才开始建立的——那时候往往已经太晚了。它必须在你还健康的时候就开始积累，就像你应该在牛市中积累现金，而不是等到熊市来了才后悔。</p>
+<p><strong>关系安全边际：不要把社交网络变成单点故障</strong></p>
+<p>在工程学中有一个概念叫“单点故障“（Single Point of Failure），指的是系统中某一个环节一旦出问题，整个系统就会瘫痪。在人际关系中，很多人同样存在“单点故障“的问题。</p>
+<p>有些人的职业发展完全依赖于一个上司的赏识。当这个上司离职或者调走，他们的职业就陷入停滞。有些人的社交圈极其狭窄，只有几个固定的朋友。当这些朋友因为种种原因疏远，他们就变得孤立无援。有些人的家庭关系中过度依赖某一个人——配偶、父母或者某个孩子——当这段关系出现问题时，整个人生就失去了支撑。</p>
+<p>关系的安全边际意味着：维护多元化的人际关系网络。这不是说要你变得功利或者圆滑，而是说你应该投资于不同领域、不同层次的人际关系。有工作中的同事和导师，有行业中的朋友和伙伴，有生活中的知己和邻居，有家庭中的亲人和爱人。</p>
+<p>当某一段关系出现问题时，其他的关系可以为你提供支持、信息和资源。就像投资组合中的分散投资一样，关系的多元化确保你不会因为某一段关系的变故而陷入孤立无援的境地。</p>
+<p>达利欧在桥水基金的管理中也体现了这种思想。他建立了极其多样化的团队，确保公司不会过度依赖任何一个人——包括他自己。这不是因为他不信任个体，而是因为他明白：任何个体都可能在某个时刻出错、缺席或者离开，而一个健康的系统必须能够承受这些冲击。</p>
+<hr>
+<h3 id="安全边际的悖论看似保守实则进取"><a class="header" href="#安全边际的悖论看似保守实则进取">安全边际的悖论：看似保守，实则进取</a></h3>
+<p>读到这里，你可能会觉得安全边际是一种保守的、防御性的策略。但我想告诉你的是，恰恰相反——<strong>安全边际实际上是让你能够更加进取的前提条件。</strong></p>
+<p>想一想，一个拥有充足应急基金的人，敢不敢辞职创业？一个拥有多元化收入来源的人，敢不敢在某一个方向上冒险尝试？一个身体健康、精力充沛的人，敢不敢接受更大的挑战？</p>
+<p>答案是：当然敢。而且他们能够以一种更加从容、更加理性的方式去冒险，因为他们知道即使失败了，也不会陷入万劫不复的境地。</p>
+<p>巴菲特之所以能够在2008年金融危机中果断出手，以极低的价格投资高盛、通用电气等公司，正是因为伯克希尔·哈撒韦始终保持着巨额的现金储备。当别人恐惧时他贪婪，不是因为他比别人更勇敢，而是因为他比别人更有余地。</p>
+<p>格雷厄姆说过一句话，完美地总结了这个悖论：“安全边际的功能，本质上是使准确预测未来变得不再必要。”</p>
+<p>你不需要预测下一次经济衰退何时到来，因为你有足够的现金储备。你不需要预测哪只股票会涨，因为你的买入价格本身就提供了保护。你不需要预测人生中的下一个意外是什么，因为你在每一个关键领域都留有余地。</p>
+<p>**安全边际给了你一种奢侈——犯错的奢侈。**在一个充满不确定性的世界里，拥有犯错的余地而不至于被毁灭，这本身就是最大的竞争优势。</p>
+<hr>
+<h3 id="但是安全边际够吗"><a class="header" href="#但是安全边际够吗">但是，安全边际够吗？</a></h3>
+<p>至此，我们讨论了安全边际在投资和人生中的种种应用。它无疑是一个极其强大的思维框架。然而，我想在最后留下一个问题：安全边际的概念基于一个隐含的假设——风险是可以被估量的，损失是有边界的。</p>
+<p>但如果不是呢？</p>
+<p>如果现实中存在一种特殊类型的风险——它发生的概率极低，但一旦发生，其影响远远超出我们的想象——那么传统的安全边际还够用吗？</p>
+<p>2008年金融危机中，很多银行家认为自己已经留了足够的安全边际。他们的风险模型告诉他们，房价全国性下跌超过20%的概率不到万分之一。但现实是，房价不仅下跌了20%，在某些地区甚至下跌了50%以上。那些“足够“的安全边际，在真正的极端事件面前，一夜之间化为乌有。</p>
+<p>新冠疫情也是如此。有多少企业认为自己有足够的现金储备，却没有想到过全球范围的经济停摆可能持续数月甚至数年？</p>
+<p>这类事件有一个专门的名称——<strong>“肥尾事件”</strong>。它们栖息在概率分布的尾端，看似遥不可及，却拥有改变一切的力量。</p>
+<p>如何理解这些极端事件，如何在我们的安全边际框架中纳入对这些事件的考量，将是我们下一节要探讨的核心话题。</p>
+<p>如果说安全边际教会我们“永远留有余地“，那么肥尾分布将教会我们一个更深刻的道理：<strong>有时候，你以为的“足够的余地“，其实远远不够。</strong></p>
+<hr>
+<blockquote>
+<p><strong>本节要点回顾：</strong></p>
+<ol>
+<li><strong>安全边际的核心</strong>：承认不确定性的存在，在每一个关键决策中都为意外留出缓冲空间。</li>
+<li><strong>格雷厄姆的教诲</strong>：只在价格远低于价值时买入，用差价保护自己免受判断错误的伤害。</li>
+<li><strong>巴菲特的进化</strong>：安全边际不仅来自低价格，更来自高品质——优秀公司的持续成长本身就是安全边际。</li>
+<li><strong>达利欧的现金流冗余</strong>：永远保持充足的流动性，不要让自己被迫在最坏的时机做出决策。</li>
+<li><strong>投资的三层安全边际</strong>：估值折扣、仓位控制、分散配置。</li>
+<li><strong>人生的四重安全边际</strong>：财务储备、时间缓冲、健康投资、关系多元化。</li>
+<li><strong>安全边际的悖论</strong>：看似保守，实则是让你能够更加从容地进取的前提。</li>
+</ol>
+</blockquote>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../ch04/s01.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../ch04/s03.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../ch04/s01.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../ch04/s03.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-c2a407aa.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

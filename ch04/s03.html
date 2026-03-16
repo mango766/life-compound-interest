@@ -1,0 +1,341 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>4.3 肥尾分布：极端事件比你想象的更常见 - 人生复利</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="从投资智慧到人生成长的五维心法">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-2459343d.css">
+        <link rel="stylesheet" href="../css/chrome-ae938929.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../custom-4b455ba5.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-e26d1a65.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-2452b032.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">人生复利</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="43-肥尾分布极端事件比你想象的更常见"><a class="header" href="#43-肥尾分布极端事件比你想象的更常见">4.3 肥尾分布：极端事件比你想象的更常见</a></h1>
+<blockquote>
+<p>“在肥尾世界里，‘不可能’只是意味着’还没发生’。”
+——纳西姆·尼古拉斯·塔勒布</p>
+</blockquote>
+<hr>
+<h3 id="一场不可能的灾难"><a class="header" href="#一场不可能的灾难">一场“不可能“的灾难</a></h3>
+<p>2008年秋天，雷曼兄弟倒下的那个周末，华尔街的量化分析师们面面相觑。他们的模型告诉他们，当时正在发生的事情，其概率大约是“连续抛硬币正面朝上二十五次“——也就是说，在宇宙的整个寿命里，这种事情也不应该发生一次。</p>
+<p>然而，它发生了。</p>
+<p>不仅发生了，而且在此之前，类似的“不可能事件“已经发生过无数次：1987年10月19日，道琼斯指数单日暴跌22.6%——按照正态分布的概率模型来计算，这个事件发生的概率大约是10的负160次方，一个比宇宙中原子总数还要小得多的数字。1998年，长期资本管理公司（LTCM）——由两位诺贝尔经济学奖得主坐镇的对冲基金——在几周之内几乎将整个华尔街拖入深渊。2010年5月6日的“闪崩“，道琼斯指数在几分钟内暴跌近千点，又在几分钟内反弹回来。2015年8月，中国A股上证指数在短短三周内从4000点跌破3000点。2020年3月，新冠疫情引发的恐慌让美股在十天内触发了四次熔断——而此前二十三年里，熔断总共只触发过一次。</p>
+<p>每一次，事后的解释都头头是道。每一次，事前的模型都说“这不可能发生“。</p>
+<p>这中间的巨大裂缝，就是今天我们要讨论的主题。</p>
+<p>让我先问你一个看似简单的问题：“百年一遇的洪水“意味着什么？大多数人会回答：“一百年发生一次。“如果你这样理解，那你在过去二十年里一定困惑过——为什么“百年一遇“的洪水、“千年一遇“的暴雨，似乎每隔几年就来一次？是气候变化了吗？是标准降低了吗？也许都有一点，但更根本的原因是：<strong>我们对概率的直觉，从一开始就是错的。</strong></p>
+<hr>
+<h3 id="正态分布一个美丽而危险的幻觉"><a class="header" href="#正态分布一个美丽而危险的幻觉">正态分布：一个美丽而危险的幻觉</a></h3>
+<p>让我们回到大学统计课上那条优美的钟形曲线。</p>
+<p>正态分布，又叫高斯分布，是统计学中最经典、最优雅的概率分布。它的形状像一口倒扣的钟：中间高高隆起，代表大多数事件聚集在平均值附近；两侧对称地迅速下降，越远离平均值，事件发生的概率就越小，而且是<strong>指数级地</strong>变小。</p>
+<p>在正态分布的世界里，数字有一种令人安心的确定性：大约68%的数据落在平均值一个标准差以内，95%落在两个标准差以内，99.7%落在三个标准差以内。超过四个标准差的事件？概率大约是万分之零点六。超过五个标准差？概率大约是三百五十万分之一。超过六个标准差？十亿分之一。超过七个标准差？在宇宙的整个寿命里，你都不太可能见证一次。</p>
+<p>这些数字给了我们一种深深的安全感。当一个银行的风险经理告诉董事会“我们的在险价值（Value at Risk, VaR）显示，在99%的置信水平下，我们的单日最大损失不会超过两千万美元“时，董事们点点头，觉得这很科学、很精确、很让人放心。</p>
+<p>问题是，正态分布的适用场景是有严格前提条件的。它要求数据满足几个关键假设：独立性（一个事件不影响另一个事件）、同分布（产生数据的底层机制不变）、以及有限方差（极端值不会极端到让整个分布失去意义）。</p>
+<p>人的身高服从正态分布。你不会在街上遇到一个身高五十米的人。一个人的身高也不会影响另一个人的身高。身高的“极端值“——最高的人也就两米五左右——不会极端到颠覆整个分布。</p>
+<p>但金融市场不是这样。一个人的恐慌抛售会引发另一个人的恐慌抛售，这叫做<strong>传染效应</strong>。市场在平静时期和恐慌时期遵循完全不同的规律，底层机制会突然切换。而一次极端的暴跌可以极端到什么程度？理论上没有下限——一天之内跌去一半甚至更多，在历史上并非没有先例。</p>
+<p>这就好比用“平均水深一米五“来描述一条河。这个数字是正确的，但如果你据此认为“一个身高一米七的人可以安全涉水而过“，你可能会淹死在某个三米深的暗坑里。正态分布告诉你的是平均情况，而杀死你的，往往是极端情况。</p>
+<p>1994年，金融学家本华·曼德博（Benoit Mandelbrot）——分形几何的创始人——在他的研究中指出了一个令人不安的事实：如果金融市场真的服从正态分布，那么道琼斯指数在1916年到2003年间应该只有58天的日波动超过3.4%。**实际数字是1001天。**应该只出现6天超过4.5%的波动，**实际是366天。**应该只出现一天超过7%的波动，<strong>实际是48天。</strong></p>
+<p>换句话说，正态分布不是稍微低估了极端事件的概率——它低估了几十倍、几百倍、甚至几千倍。</p>
+<p>这不是微调模型参数就能修正的小误差。这是一种根本性的认知错误。</p>
+<hr>
+<h3 id="肥尾分布欢迎来到真实世界"><a class="header" href="#肥尾分布欢迎来到真实世界">肥尾分布：欢迎来到真实世界</a></h3>
+<p>那么，真实世界服从什么分布？</p>
+<p>答案是<strong>肥尾分布</strong>（Fat-tailed Distribution）。</p>
+<p>如果把正态分布想象成一口钟，那么肥尾分布就像一顶宽边帽——中间部分和正态分布看起来很相似，但两侧的“帽檐“要宽得多、厚得多。“尾巴肥“意味着极端事件发生的概率远远高于正态分布的预测。</p>
+<p>用一个更直观的比喻：正态分布的尾巴像老鼠的尾巴——细而短，迅速消失在视线之外。肥尾分布的尾巴像恐龙的尾巴——粗而长，拖在后面，随时可能甩过来把你击倒。</p>
+<p>肥尾分布有很多种数学形式——幂律分布、帕累托分布、柯西分布、稳定分布等等——但它们共享一个核心特征：极端事件的概率衰减得比正态分布慢得多。在正态分布中，概率随着偏离均值的距离呈指数级下降；在肥尾分布中，概率以幂函数的速度下降，慢得多、慢得多。</p>
+<p>这意味着什么？</p>
+<p>意味着在正态分布下“十亿年一遇“的事件，在肥尾分布下可能只是“十年一遇“。意味着你以为自己在一个温和的世界里投资，实际上你在一个狂暴的世界里裸泳。意味着你的风险模型可能精确地衡量了99%的日常波动，却对那决定你生死存亡的1%一无所知。</p>
+<p>塔勒布在《黑天鹅》一书中，用一个著名的比喻来说明这个问题。他说，想象一只火鸡。从它出生的第一天起，每天都有人来喂它。日复一日，火鸡根据自己的“数据分析“得出一个结论：人类是它的朋友，每天都会来喂它，这个世界是安全而美好的。它的置信度随着天数的增加而不断上升——到了第100天，它对“人类是朋友“这个假说的信心达到了99%以上。</p>
+<p>然后，在感恩节前一天，它被宰了。</p>
+<p>对火鸡来说，第101天是一个“黑天鹅事件“——在它的全部历史数据中，没有任何信息能够预测到这一天的到来。但是，缺乏证据不等于不存在的证据。火鸡的错误不在于它的统计方法，而在于它对世界的根本假设。它以为自己生活在一个正态分布的世界里——温和的、可预测的、没有突变的。但它实际上生活在一个肥尾分布的世界里——大部分时间看起来很温和，但极端事件随时可能降临，而且这个极端事件的规模，远远超出了日常波动所能暗示的范围。</p>
+<hr>
+<h3 id="黑天鹅不可预测影响巨大事后合理化"><a class="header" href="#黑天鹅不可预测影响巨大事后合理化">黑天鹅：不可预测、影响巨大、事后合理化</a></h3>
+<p>塔勒布在他的理论体系中，将这种极端事件命名为“黑天鹅“。这个名字来自一个古老的认知谬误：在澳大利亚被发现之前，欧洲人坚信所有天鹅都是白色的，因为他们见过的每一只天鹅都是白色的。一只黑天鹅的出现，就推翻了数千年的“确定性知识“。</p>
+<p>黑天鹅事件有三个核心特征：</p>
+<p><strong>第一，不可预测。</strong> 它不在你的模型里，不在你的经验里，不在你的想象力范围内。如果能预测到，它就不是黑天鹅。2001年9月10日，没有任何华尔街分析师的模型里包含了“恐怖分子将劫持飞机撞向世贸中心“这个变量。2019年12月，没有任何全球经济预测包含了“一种新型冠状病毒将在三个月内让全球停摆“这个场景。这些事件之所以具有毁灭性的力量，恰恰是因为它们超出了所有人的预期。</p>
+<p><strong>第二，影响巨大。</strong> 黑天鹅不是日常的小波动。它们是改变游戏规则的事件。1987年的股灾在一天之内蒸发了五千亿美元的市值。2008年的金融危机导致全球经济损失超过十万亿美元，数百万人失去了工作和住房。新冠疫情不仅造成了巨大的人道主义灾难，还在几个月内重塑了全球经济的格局。一次黑天鹅事件的影响，可能超过此前数年甚至数十年所有“正常“事件的影响之和。</p>
+<p><strong>第三，事后合理化。</strong> 这是最危险的特征。每一次黑天鹅事件发生之后，都会有无数专家站出来解释“为什么这是必然的“。他们会指出一系列“早就应该看到“的信号，构建一个逻辑清晰的因果链条，让你觉得这件事其实完全可以预测。2008年金融危机之后，无数书籍和纪录片解释了次贷市场的泡沫是多么明显。新冠疫情之后，人们翻出比尔·盖茨2015年关于大流行病的TED演讲，说“你看，早就有人预警了“。</p>
+<p>但事后合理化恰恰是认知陷阱的核心。它给了我们一种虚假的安全感：“虽然我们没预测到上一只黑天鹅，但我们已经从中吸取了教训，下一只我们一定能预测到。“然而，下一只黑天鹅之所以是黑天鹅，就是因为它完全不同于你吸取了“教训“的那一只。将军们总在准备上一场战争。</p>
+<hr>
+<h3 id="卡尼曼的视角大脑为何在极端事件面前失灵"><a class="header" href="#卡尼曼的视角大脑为何在极端事件面前失灵">卡尼曼的视角：大脑为何在极端事件面前失灵</a></h3>
+<p>如果说塔勒布揭示了外部世界的肥尾本质，那么丹尼尔·卡尼曼则揭示了我们内部认知系统面对这个世界时的系统性失灵。</p>
+<p>卡尼曼和特沃斯基在行为经济学中的研究揭示了一个令人沮丧的事实：<strong>人类大脑天生不擅长处理小概率、大影响的事件。</strong> 我们对这类事件的反应模式不是太小就是太大，几乎从来不是恰当的。</p>
+<p>首先是<strong>忽视</strong>。当一个事件的概率很小的时候——比如1%或者更低——我们的大脑倾向于将它<strong>近似为零</strong>。这不是理性的判断，而是认知系统的省力策略。你知道每次开车上路都有万分之一的事故概率，但你的大脑把这个概率处理为“不会发生在我身上“。你知道金融市场可能会崩盘，但你的投资决策是基于“事情大概会继续正常运转“这个假设。卡尼曼将这称为“可能性忽视“——我们不是不知道风险存在，而是在决策过程中将其权重设为零。</p>
+<p>这种忽视在日常生活中通常是有益的——如果你时刻担心所有小概率风险，你会被焦虑淹没而无法行动。但问题在于，当这些小概率事件具有毁灭性的后果时，忽视它们就不再是理性的省力策略，而是灾难性的盲点。</p>
+<p>然后是<strong>过度反应</strong>。当小概率事件被“唤醒“——通常是因为它刚刚发生过，或者被媒体生动地报道过——我们的大脑就会走向另一个极端，赋予它远超实际的概率权重。这就是为什么一次飞机失事的新闻会让机票销量骤降，尽管飞行仍然是最安全的出行方式。这就是为什么一次股市暴跌之后，许多投资者会在恐慌中清仓，然后在随后的反弹中错过最好的买入时机。</p>
+<p>卡尼曼用“前景理论“（Prospect Theory）中的<strong>概率权重函数</strong>来描述这种现象：人们不是按照客观概率来做决策的，而是按照“心理权重“来做决策的。非常小的概率要么被忽视（权重为零），要么被高估（权重远大于实际概率）。中等概率通常被低估。高概率通常被高估到接近确定。</p>
+<p>这解释了一个看似矛盾的现象：同一个人，可能同时购买彩票（高估了中奖的小概率）和拒绝系安全带（忽视了事故的小概率）。他不是在两种情况下使用不同的逻辑，而是在两种情况下被不同的心理机制驱动——对彩票，是“想象中奖“的生动画面激活了过度反应机制；对安全带，是“我从没出过事故“的日常经验激活了忽视机制。</p>
+<p>更深层的问题是卡尼曼所说的<strong>损失厌恶</strong>（Loss Aversion）。人们对损失的敏感度大约是对收益的两倍——失去一百元带来的痛苦，大约是得到一百元带来的快乐的两倍。这在正常的波动范围内表现为过度保守。但在极端事件中，损失厌恶与概率扭曲的叠加效应是灾难性的：</p>
+<p>当极端风险被忽视时，人们会过度冒险（因为他们觉得“不会发生“）。当极端事件真正发生时，损失厌恶会被瞬间放大到极致，导致恐慌性的决策——比如在股市最低点清仓，比如在疫情恐慌中做出永久性的人生改变。</p>
+<p>这就形成了一个残酷的循环：在应该谨慎的时候过于大胆，在应该大胆的时候过于恐惧。</p>
+<hr>
+<h3 id="投资中的应用如何在肥尾世界中生存"><a class="header" href="#投资中的应用如何在肥尾世界中生存">投资中的应用：如何在肥尾世界中生存</a></h3>
+<p>理解了肥尾分布和我们认知系统的缺陷之后，我们可以得出一些具体的投资原则。</p>
+<p><strong>第一，不要迷信基于正态分布的风险模型。</strong></p>
+<p>在险价值（VaR）是华尔街最流行的风险管理工具之一。它的基本逻辑是：根据历史数据和正态分布假设，计算出在一定置信水平下（通常是95%或99%），投资组合在特定时间段内（通常是一天或十天）的最大可能损失。</p>
+<p>VaR的问题不在于它不准确——在“正常“市场条件下，它其实相当准确。问题在于，<strong>它对你真正需要关心的事情一无所知</strong>。VaR就像一把只能在晴天使用的雨伞——在你不需要它的时候，它工作得很好；在你最需要它的时候，它彻底失效。</p>
+<p>2008年金融危机中，几乎所有主要金融机构的VaR模型都严重低估了实际损失。原因很简单：VaR是基于历史数据和正态分布假设的，而危机恰恰是历史数据中没有的、正态分布无法描述的那种事件。</p>
+<p>这并不意味着你不应该使用定量风险模型。但你需要理解，<strong>所有模型都是对现实的简化，而简化就意味着遗漏，而被遗漏的东西往往就是杀死你的东西。</strong> 永远不要让一个模型的输出替代你自己的判断。模型告诉你的是“在这些假设成立的条件下，风险是多大“。你需要追问的是：如果这些假设不成立呢？</p>
+<p><strong>第二，做极端的压力测试。</strong></p>
+<p>与其问“正常情况下我可能亏多少“，不如问一个更尖锐的问题：<strong>“如果最坏的情况比我想象的还要坏三倍，我能活下来吗？”</strong></p>
+<p>这不是悲观主义，这是务实的生存策略。2008年金融危机中，很多机构做过压力测试，但他们测试的“最坏情况“是房价下跌20%——实际下跌超过了35%。他们测试的是“一场严重的衰退“，来的却是“二战以来最严重的金融危机“。</p>
+<p>一个好的压力测试应该包含你觉得“荒谬“的场景。股市一天跌30%？你可能觉得荒谬，但1987年就发生过。你的三个最大持仓同时暴雷？你可能觉得不可能，但高度相关的资产在危机中经常同时出问题。你失去工作的同时房价暴跌，配偶也失去工作？听起来像是末日场景，但2008年对很多美国家庭来说就是这样。</p>
+<p><strong>关键不是预测这些场景会不会发生，而是确保即使它们发生了，你也不会被彻底消灭。</strong> 在肥尾世界中，“不会把我杀死“比“最大化预期收益“重要得多。</p>
+<p><strong>第三，尾部对冲——用小成本为极端事件买保险。</strong></p>
+<p>塔勒布不仅是一个理论家，他还是一个实践者。他参与创立的Universa投资公司，核心策略就是“尾部对冲“：在大部分时间里，持续支付小额的期权费用（就像买保险一样），购买深度虚值的看跌期权。这些期权在99%的时间里都是亏钱的——但在那1%的极端下跌中，它们会产生巨额回报。</p>
+<p>在2020年3月的新冠股灾中，Universa的回报率据报道超过了4000%。平时付出的小额“保险费“，在一次极端事件中获得了几十倍甚至上百倍的回报。</p>
+<p>普通投资者不需要像Universa那样做专业的尾部对冲，但可以借鉴其核心思想：</p>
+<ul>
+<li><strong>保持充足的现金储备。</strong> 现金是最简单的尾部对冲。在危机中，拥有现金的人不仅能生存，还能以极低的价格买入优质资产。巴菲特始终保持大量现金储备，这不是因为他胆小，而是因为他深刻理解：在别人恐惧时贪婪的前提是——你得先活着。</li>
+<li><strong>分散化要做到真正的分散。</strong> 不是持有五只科技股就叫分散化。真正的分散化意味着你的资产在不同经济场景下有不同的表现——当股市暴跌时，你的某些资产（比如国债、黄金）可能会上涨。</li>
+<li><strong>避免杠杆，或者严格控制杠杆比例。</strong> 杠杆是肥尾分布中最致命的加速器。在正态分布的世界里，两倍杠杆意味着两倍的风险和两倍的收益。在肥尾分布的世界里，两倍杠杆可能意味着在极端事件中被彻底消灭。LTCM的教训至今振聋发聩——那些最聪明的人，用最精密的模型，因为过高的杠杆，在一次“不可能“的事件中灰飞烟灭。</li>
+</ul>
+<hr>
+<h3 id="人生中的应用每个人都会遇到自己的黑天鹅"><a class="header" href="#人生中的应用每个人都会遇到自己的黑天鹅">人生中的应用：每个人都会遇到自己的黑天鹅</a></h3>
+<p>肥尾分布不仅存在于金融市场中。如果你仔细审视自己的人生，你会发现，塑造你人生轨迹的往往不是那些日常的、渐进的、可预测的事件，而是少数几个你完全没有预料到的极端事件。</p>
+<p><strong>健康的黑天鹅。</strong> 你可能每年体检，饮食健康，坚持运动，所有指标都正常。然后在某一天，一次偶然的检查发现了一个肿瘤。或者一场车祸，一次突发的心脏事件，一种你听都没听说过的疾病。在你所有的人生规划中——职业发展、财务目标、退休计划——有多少考虑了“如果我在四十五岁突然丧失工作能力“这个场景？</p>
+<p>这不是要你每天活在恐惧中。而是要你承认：<strong>在健康这个领域，肥尾事件是真实存在的，而大多数人的应对策略严重不足。</strong> 充足的健康保险、紧急医疗基金、对家人的经济保障安排——这些不是“浪费钱“，而是在肥尾世界中的生存必需品。</p>
+<p><strong>职业的黑天鹅。</strong> 十年前，出租车司机不会想到Uber会在几年内颠覆他们的行业。五年前，很多翻译从业者不会想到AI翻译的进步速度。此刻，无数看似稳固的职业正在被技术革命悄然侵蚀。</p>
+<p>行业颠覆不是正态分布式的——不是每年缓慢地变化2%。它是肥尾分布式的——在很长一段时间内似乎什么都没变，然后突然在几年内天翻地覆。柯达公司在数码相机革命到来之前的最后十年里，胶片业务的增长看起来依然稳健。然后，悬崖来了。</p>
+<p>如果你的全部收入依赖于一个雇主、一个行业、一项技能，那么你就是在做职业上的“裸头寸“——没有任何对冲。一次行业颠覆、一次公司破产、一次技术替代，就可能让你从“一切安好“变成“一无所有“。</p>
+<p><strong>关系的黑天鹅。</strong> 核心关系的突然破裂——离婚、挚友反目、家庭成员的重大变故——对大多数人的人生影响远远超过任何投资的盈亏。我见过许多事业成功的人，在一次婚姻破裂之后，整个人生陷入长期的混乱和低谷。</p>
+<p>我不是说你应该用管理投资组合的方式来管理你的人际关系——那会让你变成一个冷漠的人。但我想说的是：<strong>不要把所有的情感支持、社会认同、人生意义都押注在一段关系上。</strong> 就像投资不应该全押一只股票一样，你的情感和社交世界也需要某种程度的多元化——深厚的友谊、家庭纽带、社群归属、对自我价值的内在认同。</p>
+<hr>
+<h3 id="建立反脆弱的人生备份系统"><a class="header" href="#建立反脆弱的人生备份系统">建立反脆弱的人生备份系统</a></h3>
+<p>面对人生中的肥尾事件，塔勒布提出了一个比“韧性“更激进的概念：<strong>反脆弱</strong>（Antifragile）。</p>
+<p>韧性（Resilience）意味着在冲击之后恢复原状。反脆弱意味着<strong>在冲击中变得更强</strong>。</p>
+<p>一个反脆弱的投资组合不仅能在危机中存活，还能在危机中获利——就像Universa那样。一个反脆弱的人不仅能在逆境中撑过去，还能利用逆境来成长。</p>
+<p>如何建立反脆弱的人生备份系统？</p>
+<p><strong>技能多元化。</strong> 不要只有一项核心技能。如果你是一个程序员，同时也培养写作能力、沟通能力、商业思维。如果你是一个医生，同时也了解健康管理、医疗科技的趋势。当某一个领域被颠覆时，你的其他技能组合可以让你迅速转向——甚至可能找到更好的机会。</p>
+<p><strong>收入来源多元化。</strong> 工资收入是大多数人唯一的收入来源。这意味着你的“收入组合“完全没有分散化——一旦失去工作，收入从100%变成0%。即使只是一份小小的副业收入、一些投资分红、一个能产生被动收入的技能，也能在危机时刻提供关键的缓冲。</p>
+<p><strong>社交网络多元化。</strong> 不要只在一个圈子里社交。跨行业、跨地域、跨年龄层的社交网络，在你的主要圈子遭遇系统性冲击时，可能提供意想不到的支持和机会。很多人在职业转型中获得的最关键的帮助，来自他们“弱连接“——那些不太熟但在不同领域有资源的人。</p>
+<p><strong>认知多元化。</strong> 阅读不同领域的书籍，接触不同背景的人，理解不同的思维模型。单一的认知框架就像基于正态分布的风险模型——在日常环境中运作良好，但在极端事件面前彻底失效。多元的认知框架让你有更多的“镜头“来审视同一个问题，增加了你在意外面前做出正确判断的概率。</p>
+<p>回到本节开头的那个问题——“百年一遇的洪水为什么每隔几年就来一次？“现在你知道了：不是洪水变了，而是我们对概率的理解一直就是错的。我们用正态分布的直觉去理解一个肥尾分布的世界，自然会不断被“不可能“的事件震惊。</p>
+<p><strong>真正的智慧不是预测下一只黑天鹅什么时候到来——那是不可能的。真正的智慧是构建一个系统——无论是投资系统还是人生系统——让你在黑天鹅到来时不会被毁灭，甚至能从中受益。</strong></p>
+<p>这需要谦逊——承认你不知道未来会发生什么。这需要纪律——在一切看起来很好的时候为最坏的情况做准备。这需要勇气——在别人恐慌时保持冷静，在别人贪婪时保持警惕。</p>
+<p>而这，恰恰是风险管理最深层的含义。它不仅仅是一种投资技术，更是一种人生哲学。</p>
+<hr>
+<p><em>在了解了肥尾分布的现实之后，一个自然的问题浮现出来：如果世界比我们以为的更不确定、更极端、更不可预测，那么我们应该如何面对这种不确定性？是试图隐藏它、忽视它，还是直面它、拥抱它？在下一节中，我们将探讨达利欧“极度透明“的原则——一种反直觉但极其强大的方式来处理我们认知中的盲点和偏差。当你对风险足够诚实的时候，风险反而会变得更加可控。</em></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../ch04/s02.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../ch04/s04.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../ch04/s02.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../ch04/s04.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-c2a407aa.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
