@@ -1,0 +1,146 @@
+/* 人生复利 - 自定义样式 */
+
+/* 中文阅读优化 - 加大整体尺寸 */
+:root {
+    --content-max-width: 980px;
+    --sidebar-width: 320px;
+}
+
+html {
+    font-size: 18px;
+}
+
+/* 正文区域 */
+.content {
+    font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-size: 1.15rem;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    padding: 0 2rem;
+}
+
+.content p {
+    margin-bottom: 1em;
+}
+
+/* 标题样式 - 更大更醒目 */
+.content h1 {
+    font-size: 2.4em;
+    border-bottom: 3px solid #e8e8e8;
+    padding-bottom: 0.4em;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+}
+
+.content h2 {
+    font-size: 1.8em;
+    margin-top: 1.6em;
+    margin-bottom: 0.6em;
+}
+
+.content h3 {
+    font-size: 1.45em;
+    margin-top: 1.4em;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+/* 引用块美化 */
+.content blockquote {
+    border-left: 5px solid #4a90d9;
+    background-color: #f8f9fa;
+    padding: 16px 24px;
+    margin: 1.5em 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 1.05rem;
+}
+
+/* 分隔线 */
+.content hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 2.5em 0;
+}
+
+/* 列表间距 */
+.content li {
+    margin-bottom: 0.5em;
+    line-height: 1.9;
+}
+
+.content ul, .content ol {
+    padding-left: 1.5em;
+}
+
+/* checkbox 样式 */
+.content input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+/* 强调文字 */
+.content strong {
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+/* 侧边栏优化 - 加大字体 */
+.sidebar {
+    font-size: 1rem;
+}
+
+.sidebar .sidebar-scrollbox {
+    font-size: 1.05rem;
+    padding: 16px;
+}
+
+.sidebar .sidebar-scrollbox a {
+    padding: 6px 0;
+    display: block;
+}
+
+/* 侧边栏章节标题 */
+.sidebar .chapter li {
+    margin-bottom: 4px;
+    line-height: 1.6;
+}
+
+.sidebar .chapter li.part-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-top: 1.2em;
+    margin-bottom: 0.6em;
+}
+
+/* 顶部导航栏 */
+.menu-bar {
+    font-size: 1rem;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+    .content {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+    .content h1 {
+        font-size: 1.8em;
+    }
+    .content h2 {
+        font-size: 1.5em;
+    }
+    .content h3 {
+        font-size: 1.25em;
+    }
+}
+
+/* 打印样式 */
+@media print {
+    .content {
+        font-size: 12pt;
+        line-height: 1.8;
+    }
+}
