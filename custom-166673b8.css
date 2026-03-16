@@ -11,6 +11,50 @@
     --sidebar-width: 300px;
 }
 
+/* ============================================
+   封面书名 — 高级质感
+   ============================================ */
+.book-cover {
+    text-align: center;
+    padding: 60px 0 40px;
+    margin-bottom: 10px;
+}
+
+.book-cover .book-title {
+    font-size: 52px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.15em !important;
+    color: #1a1a1a !important;
+    font-family: "Noto Serif SC", "Source Han Serif SC", "SimSun", "Songti SC", Georgia, "Times New Roman", serif !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.4 !important;
+    border-bottom: none !important;
+}
+
+.book-cover .book-subtitle {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    color: #9b9a97 !important;
+    letter-spacing: 0.12em;
+    margin-top: 18px !important;
+    margin-bottom: 0 !important;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif !important;
+}
+
+/* 暗色主题封面 */
+.navy .book-cover .book-title,
+.coal .book-cover .book-title,
+.ayu .book-cover .book-title {
+    color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.navy .book-cover .book-subtitle,
+.coal .book-cover .book-subtitle,
+.ayu .book-cover .book-subtitle {
+    color: rgba(255, 255, 255, 0.45) !important;
+}
+
 html {
     font-size: 22px !important;
     -webkit-font-smoothing: antialiased;
