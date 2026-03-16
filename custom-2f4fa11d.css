@@ -2,6 +2,7 @@
    《人生复利》— Notion 风格排版
    参考 Notion 的设计语言：
    大字体、宽行距、充分留白、极简装饰
+   所有字号使用 px + !important 防止被覆盖
    ============================================= */
 
 /* === 全局变量 === */
@@ -10,111 +11,115 @@
     --sidebar-width: 300px;
 }
 
-/* === 基础字号：大！=== */
 html {
-    font-size: 20px;
+    font-size: 22px !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 /* === 正文：Notion 风格 === */
 .content {
-    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", "Helvetica Neue", sans-serif;
-    font-size: 1.1rem;
-    line-height: 1.8;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", "Helvetica Neue", sans-serif !important;
+    font-size: 20px !important;
+    line-height: 1.85 !important;
     letter-spacing: 0.02em;
-    color: #37352f;
+    color: #37352f !important;
     padding: 0 2rem;
 }
 
 .content main {
-    padding-top: 0.5rem;
-    padding-bottom: 5rem;
+    padding-top: 10px;
+    padding-bottom: 80px;
 }
 
 .content p {
-    margin-bottom: 1.1em;
+    font-size: 20px !important;
+    line-height: 1.85 !important;
+    margin-bottom: 20px;
 }
 
-/* === H1 — Notion 大标题风格：大而轻 === */
+/* === H1 — Notion 大标题风格 === */
 .content h1 {
-    font-size: 2.2em;
-    font-weight: 600;
-    color: #37352f;
-    border-bottom: none;
-    margin-top: 1.2em;
-    margin-bottom: 0.6em;
+    font-size: 36px !important;
+    font-weight: 600 !important;
+    color: #37352f !important;
+    border-bottom: none !important;
+    margin-top: 44px;
+    margin-bottom: 22px;
     padding-bottom: 0;
-    padding-top: 0.5em;
+    padding-top: 12px;
     letter-spacing: 0.02em;
     line-height: 1.3;
 }
 
 /* === H2 — Notion 二级标题 === */
 .content h2 {
-    font-size: 1.7em;
-    font-weight: 600;
-    color: #37352f;
-    margin-top: 2em;
-    margin-bottom: 0.5em;
+    font-size: 30px !important;
+    font-weight: 600 !important;
+    color: #37352f !important;
+    margin-top: 40px;
+    margin-bottom: 16px;
     padding-bottom: 0;
-    border-bottom: none;
+    border-bottom: none !important;
     line-height: 1.3;
 }
 
 /* === H3 — Notion 三级标题 === */
 .content h3 {
-    font-size: 1.35em;
-    font-weight: 600;
-    color: #37352f;
-    margin-top: 1.6em;
-    margin-bottom: 0.4em;
+    font-size: 25px !important;
+    font-weight: 600 !important;
+    color: #37352f !important;
+    margin-top: 32px;
+    margin-bottom: 12px;
     line-height: 1.4;
 }
 
 /* === 引用块 — Notion 风格：左边线 + 无背景 === */
 .content blockquote {
     border-left: 3px solid #37352f;
-    background: transparent;
-    padding: 0.1em 0 0.1em 1.2em;
-    margin: 1.2em 0;
+    background: transparent !important;
+    padding: 2px 0 2px 22px;
+    margin: 22px 0;
     border-radius: 0;
-    font-size: 1.1rem;
-    color: #37352f;
-    line-height: 1.8;
+    font-size: 20px !important;
+    color: #37352f !important;
+    line-height: 1.85 !important;
 }
 
 .content blockquote p {
-    margin-bottom: 0.6em;
+    font-size: 20px !important;
+    margin-bottom: 12px;
 }
 
 .content blockquote p:last-child {
     margin-bottom: 0;
 }
 
-/* === 分隔线 — Notion 极简：一条浅灰线 === */
+/* === 分隔线 — Notion 极简 === */
 .content hr {
-    border: none;
+    border: none !important;
     height: 1px;
     background-color: #e9e9e7;
-    margin: 2em 0;
+    margin: 36px 0;
 }
 
 /* === 列表 — Notion 风格 === */
 .content ul, .content ol {
-    padding-left: 1.6em;
-    margin-bottom: 1em;
+    padding-left: 28px;
+    margin-bottom: 20px;
+    font-size: 20px !important;
 }
 
 .content li {
-    margin-bottom: 0.35em;
-    line-height: 1.8;
-    color: #37352f;
+    font-size: 20px !important;
+    margin-bottom: 7px;
+    line-height: 1.85 !important;
+    color: #37352f !important;
 }
 
 /* === Checkbox — Notion 待办清单 === */
 .content input[type="checkbox"] {
-    margin-right: 0.6em;
+    margin-right: 10px;
     width: 16px;
     height: 16px;
     accent-color: #2eaadc;
@@ -122,9 +127,9 @@ html {
     cursor: pointer;
 }
 
-/* === 加粗 — Notion 用同色加粗 === */
+/* === 加粗 === */
 .content strong {
-    color: #37352f;
+    color: #37352f !important;
     font-weight: 700;
 }
 
@@ -136,16 +141,16 @@ html {
 /* === 行内代码 — Notion 红色小块 === */
 .content code {
     background: rgba(135, 131, 120, 0.15);
-    padding: 0.2em 0.45em;
+    padding: 3px 7px;
     border-radius: 4px;
-    font-size: 0.9em;
+    font-size: 18px !important;
     color: #eb5757;
     font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace;
 }
 
 /* === 链接 — Notion 风格下划线 === */
 .content a {
-    color: #37352f;
+    color: #37352f !important;
     text-decoration: underline;
     text-decoration-color: rgba(55, 53, 47, 0.4);
     text-underline-offset: 3px;
@@ -160,34 +165,35 @@ html {
 .content table {
     width: 100%;
     border-collapse: collapse;
-    margin: 1.2em 0;
-    font-size: 1rem;
+    margin: 22px 0;
+    font-size: 19px !important;
 }
 
 .content table th {
     background: transparent;
     font-weight: 600;
     text-align: left;
-    padding: 0.6em 0.8em;
+    padding: 10px 14px;
     border-bottom: 1px solid #e9e9e7;
     color: #9b9a97;
-    font-size: 0.9rem;
+    font-size: 17px !important;
 }
 
 .content table td {
-    padding: 0.6em 0.8em;
+    padding: 10px 14px;
     border-bottom: 1px solid #f1f1ef;
-    color: #37352f;
+    color: #37352f !important;
+    font-size: 19px !important;
 }
 
 /* === 侧边栏 — Notion 风格 === */
 .sidebar {
-    font-size: 1rem;
+    font-size: 15px !important;
 }
 
 .sidebar .sidebar-scrollbox {
-    padding: 1rem 0.8rem;
-    font-size: 1rem;
+    padding: 16px 12px;
+    font-size: 15px !important;
 }
 
 .sidebar .chapter li {
@@ -196,6 +202,7 @@ html {
 }
 
 .sidebar .chapter li a {
+    font-size: 15px !important;
     padding: 5px 10px;
     border-radius: 4px;
     transition: background-color 0.1s ease;
@@ -215,14 +222,14 @@ html {
     background-color: rgba(55, 53, 47, 0.06);
 }
 
-/* 侧边栏章节分组标题 — Notion 风格 */
+/* 侧边栏章节分组标题 */
 .sidebar .chapter li.part-title {
-    font-size: 0.82rem;
+    font-size: 13px !important;
     font-weight: 600;
     letter-spacing: 0.04em;
     color: #9b9a97;
-    margin-top: 1.4em;
-    margin-bottom: 0.3em;
+    margin-top: 20px;
+    margin-bottom: 4px;
     padding-left: 10px;
     text-transform: none;
 }
@@ -239,7 +246,7 @@ html {
 
 /* === 顶部菜单栏 === */
 .menu-bar {
-    font-size: 1rem;
+    font-size: 15px !important;
 }
 
 /* ============================================
@@ -247,7 +254,7 @@ html {
    ============================================ */
 .light .content,
 .rust .content {
-    color: #37352f;
+    color: #37352f !important;
 }
 
 .light .sidebar,
@@ -260,71 +267,64 @@ html {
    Navy / Coal 暗色主题适配
    ============================================ */
 .navy .content,
-.coal .content {
-    color: rgba(255, 255, 255, 0.9);
+.coal .content,
+.ayu .content {
+    color: rgba(255, 255, 255, 0.9) !important;
 }
 
-.navy .content h1,
-.navy .content h2,
-.navy .content h3,
-.coal .content h1,
-.coal .content h2,
-.coal .content h3 {
-    color: rgba(255, 255, 255, 0.95);
+.navy .content h1, .navy .content h2, .navy .content h3,
+.coal .content h1, .coal .content h2, .coal .content h3,
+.ayu .content h1, .ayu .content h2, .ayu .content h3 {
+    color: rgba(255, 255, 255, 0.95) !important;
 }
 
-.navy .content strong,
-.coal .content strong {
-    color: rgba(255, 255, 255, 0.95);
+.navy .content p, .coal .content p, .ayu .content p,
+.navy .content li, .coal .content li, .ayu .content li {
+    color: rgba(255, 255, 255, 0.9) !important;
 }
 
-.navy .content blockquote,
-.coal .content blockquote {
+.navy .content strong, .coal .content strong, .ayu .content strong {
+    color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.navy .content blockquote, .coal .content blockquote, .ayu .content blockquote {
     border-left-color: rgba(255, 255, 255, 0.4);
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8) !important;
 }
 
-.navy .content hr,
-.coal .content hr {
+.navy .content hr, .coal .content hr, .ayu .content hr {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.navy .content a,
-.coal .content a {
-    color: rgba(255, 255, 255, 0.9);
+.navy .content a, .coal .content a, .ayu .content a {
+    color: rgba(255, 255, 255, 0.9) !important;
     text-decoration-color: rgba(255, 255, 255, 0.3);
 }
 
-.navy .content a:hover,
-.coal .content a:hover {
+.navy .content a:hover, .coal .content a:hover, .ayu .content a:hover {
     text-decoration-color: rgba(255, 255, 255, 0.7);
 }
 
-.navy .content table th,
-.coal .content table th {
+.navy .content table th, .coal .content table th, .ayu .content table th {
     color: rgba(255, 255, 255, 0.5);
     border-bottom-color: rgba(255, 255, 255, 0.1);
 }
 
-.navy .content table td,
-.coal .content table td {
+.navy .content table td, .coal .content table td, .ayu .content table td {
     border-bottom-color: rgba(255, 255, 255, 0.06);
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(255, 255, 255, 0.85) !important;
 }
 
-.navy .sidebar .chapter li a,
-.coal .sidebar .chapter li a {
+.navy .sidebar .chapter li a, .coal .sidebar .chapter li a {
     color: rgba(255, 255, 255, 0.55);
 }
 
-.navy .sidebar .chapter li a:hover,
-.coal .sidebar .chapter li a:hover {
+.navy .sidebar .chapter li a:hover, .coal .sidebar .chapter li a:hover {
     color: rgba(255, 255, 255, 0.9);
     background-color: rgba(255, 255, 255, 0.06);
 }
 
-.navy .sidebar .chapter li.part-title,
-.coal .sidebar .chapter li.part-title {
+.navy .sidebar .chapter li.part-title, .coal .sidebar .chapter li.part-title {
     color: rgba(255, 255, 255, 0.35);
 }
 
@@ -333,20 +333,26 @@ html {
    ============================================ */
 @media (max-width: 768px) {
     html {
-        font-size: 18px;
+        font-size: 20px !important;
     }
     .content {
-        font-size: 1.05rem;
-        padding: 0 1rem;
+        font-size: 18px !important;
+        padding: 0 16px;
+    }
+    .content p,
+    .content li,
+    .content blockquote,
+    .content blockquote p {
+        font-size: 18px !important;
     }
     .content h1 {
-        font-size: 1.8em;
+        font-size: 30px !important;
     }
     .content h2 {
-        font-size: 1.45em;
+        font-size: 26px !important;
     }
     .content h3 {
-        font-size: 1.2em;
+        font-size: 22px !important;
     }
 }
 
@@ -354,12 +360,12 @@ html {
    打印优化
    ============================================ */
 @media print {
-    .content {
-        font-size: 12pt;
+    .content, .content p, .content li {
+        font-size: 12pt !important;
         line-height: 1.7;
-        color: #000;
+        color: #000 !important;
     }
     .content a {
-        color: #000;
+        color: #000 !important;
     }
 }
