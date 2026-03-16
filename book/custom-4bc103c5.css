@@ -12,17 +12,17 @@
 
 /* === 基础字号：大！=== */
 html {
-    font-size: 18px;
+    font-size: 20px !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* === 正文：Notion 风格 === */
+/* === 正文：Notion 风格，大字体 === */
 .content {
     font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", "Helvetica Neue", sans-serif;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    letter-spacing: 0.02em;
+    font-size: 22px !important;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
     color: #37352f;
     padding: 0 2rem;
 }
@@ -38,7 +38,7 @@ html {
 
 /* === H1 — Notion 大标题风格：大而轻 === */
 .content h1 {
-    font-size: 2.2em;
+    font-size: 40px !important;
     font-weight: 600;
     color: #37352f;
     border-bottom: none;
@@ -52,7 +52,7 @@ html {
 
 /* === H2 — Notion 二级标题 === */
 .content h2 {
-    font-size: 1.7em;
+    font-size: 32px !important;
     font-weight: 600;
     color: #37352f;
     margin-top: 2em;
@@ -64,7 +64,7 @@ html {
 
 /* === H3 — Notion 三级标题 === */
 .content h3 {
-    font-size: 1.35em;
+    font-size: 26px !important;
     font-weight: 600;
     color: #37352f;
     margin-top: 1.6em;
@@ -79,9 +79,9 @@ html {
     padding: 0.1em 0 0.1em 1.2em;
     margin: 1.2em 0;
     border-radius: 0;
-    font-size: 1.1rem;
+    font-size: 22px;
     color: #37352f;
-    line-height: 1.8;
+    line-height: 1.9;
 }
 
 .content blockquote p {
@@ -182,12 +182,12 @@ html {
 
 /* === 侧边栏 — Notion 风格 === */
 .sidebar {
-    font-size: 1rem;
+    font-size: 16px !important;
 }
 
 .sidebar .sidebar-scrollbox {
     padding: 1rem 0.8rem;
-    font-size: 0.95rem;
+    font-size: 15px !important;
 }
 
 .sidebar .chapter li {
@@ -217,7 +217,7 @@ html {
 
 /* 侧边栏章节分组标题 — Notion 风格 */
 .sidebar .chapter li.part-title {
-    font-size: 0.82rem;
+    font-size: 13px !important;
     font-weight: 600;
     letter-spacing: 0.04em;
     color: #9b9a97;
@@ -333,20 +333,20 @@ html {
    ============================================ */
 @media (max-width: 768px) {
     html {
-        font-size: 17px;
+        font-size: 18px !important;
     }
     .content {
-        font-size: 1.05rem;
+        font-size: 19px !important;
         padding: 0 1rem;
     }
     .content h1 {
-        font-size: 1.8em;
+        font-size: 32px !important;
     }
     .content h2 {
-        font-size: 1.45em;
+        font-size: 26px !important;
     }
     .content h3 {
-        font-size: 1.2em;
+        font-size: 22px !important;
     }
 }
 
