@@ -259,18 +259,19 @@ html {
     border-radius: 4px;
     transition: all 0.15s ease;
     display: block;
-    color: rgba(44, 44, 44, 0.55);
+    color: #3d3d3d !important;
     letter-spacing: 0.03em;
+    font-weight: 500;
 }
 
 .sidebar .chapter li a:hover {
     background-color: rgba(44, 44, 44, 0.05);
-    color: #1a1a1a;
+    color: #1a1a1a !important;
 }
 
 .sidebar .chapter li.active a,
 .sidebar .chapter li a.active {
-    color: #1a1a1a;
+    color: #1a1a1a !important;
     font-weight: 700;
     background-color: rgba(44, 44, 44, 0.06);
 }
@@ -280,7 +281,7 @@ html {
     font-size: 12px !important;
     font-weight: 600;
     letter-spacing: 0.08em;
-    color: #9b9a97;
+    color: #666 !important;
     margin-top: 24px;
     margin-bottom: 6px;
     padding-left: 10px;
