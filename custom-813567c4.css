@@ -237,9 +237,10 @@ html {
     font-size: 19px !important;
 }
 
-/* === 侧边栏 — Notion 风格 === */
+/* === 侧边栏 — 衬线质感 === */
 .sidebar {
     font-size: 15px !important;
+    font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "STSong", Georgia, serif !important;
 }
 
 .sidebar .sidebar-scrollbox {
@@ -248,41 +249,43 @@ html {
 }
 
 .sidebar .chapter li {
-    margin-bottom: 1px;
-    line-height: 1.5;
+    margin-bottom: 2px;
+    line-height: 1.55;
 }
 
 .sidebar .chapter li a {
     font-size: 15px !important;
     padding: 5px 10px;
     border-radius: 4px;
-    transition: background-color 0.1s ease;
+    transition: all 0.15s ease;
     display: block;
-    color: rgba(55, 53, 47, 0.65);
+    color: rgba(44, 44, 44, 0.55);
+    letter-spacing: 0.03em;
 }
 
 .sidebar .chapter li a:hover {
-    background-color: rgba(55, 53, 47, 0.06);
-    color: #37352f;
+    background-color: rgba(44, 44, 44, 0.05);
+    color: #1a1a1a;
 }
 
 .sidebar .chapter li.active a,
 .sidebar .chapter li a.active {
-    color: #37352f;
-    font-weight: 600;
-    background-color: rgba(55, 53, 47, 0.06);
+    color: #1a1a1a;
+    font-weight: 700;
+    background-color: rgba(44, 44, 44, 0.06);
 }
 
-/* 侧边栏章节分组标题 */
+/* 侧边栏章节分组标题 — 小号无衬线，与正文形成对比 */
 .sidebar .chapter li.part-title {
-    font-size: 13px !important;
+    font-size: 12px !important;
     font-weight: 600;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.08em;
     color: #9b9a97;
-    margin-top: 20px;
-    margin-bottom: 4px;
+    margin-top: 24px;
+    margin-bottom: 6px;
     padding-left: 10px;
     text-transform: none;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", sans-serif !important;
 }
 
 /* === 导航箭头 === */
@@ -375,7 +378,7 @@ html {
 }
 
 .navy .sidebar .chapter li a, .coal .sidebar .chapter li a {
-    color: rgba(255, 255, 255, 0.55);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .navy .sidebar .chapter li a:hover, .coal .sidebar .chapter li a:hover {
@@ -383,8 +386,14 @@ html {
     background-color: rgba(255, 255, 255, 0.06);
 }
 
+.navy .sidebar .chapter li.active a, .coal .sidebar .chapter li.active a,
+.navy .sidebar .chapter li a.active, .coal .sidebar .chapter li a.active {
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 700;
+}
+
 .navy .sidebar .chapter li.part-title, .coal .sidebar .chapter li.part-title {
-    color: rgba(255, 255, 255, 0.35);
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .navy .menu-bar .menu-title, .coal .menu-bar .menu-title, .ayu .menu-bar .menu-title {
