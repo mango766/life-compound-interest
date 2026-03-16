@@ -1,0 +1,18 @@
+[book]
+title = "人生复利"
+description = "从投资智慧到人生成长的五维心法"
+authors = [""]
+language = "zh-CN"
+src = "src"
+
+[build]
+build-dir = "book"
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+git-repository-url = ""
+additional-css = ["custom.css"]
+
+[output.html.search]
+enable = true
