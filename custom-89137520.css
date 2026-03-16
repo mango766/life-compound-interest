@@ -293,6 +293,14 @@ html {
     font-size: 15px !important;
 }
 
+.menu-bar .menu-title {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.1em !important;
+    font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "SimSun", Georgia, serif !important;
+    color: #1a1a1a !important;
+}
+
 /* ============================================
    Light 主题 — Notion 默认白底
    ============================================ */
@@ -370,6 +378,10 @@ html {
 
 .navy .sidebar .chapter li.part-title, .coal .sidebar .chapter li.part-title {
     color: rgba(255, 255, 255, 0.35);
+}
+
+.navy .menu-bar .menu-title, .coal .menu-bar .menu-title, .ayu .menu-bar .menu-title {
+    color: rgba(255, 255, 255, 0.9) !important;
 }
 
 /* ============================================
