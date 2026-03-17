@@ -37,9 +37,19 @@
     font-weight: 400 !important;
     color: #9b9a97 !important;
     letter-spacing: 0.12em;
-    margin-top: 18px !important;
+    margin-top: 12px !important;
     margin-bottom: 0 !important;
     font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif !important;
+}
+
+.book-cover .book-author {
+    font-size: 17px !important;
+    font-weight: 400 !important;
+    color: #666 !important;
+    letter-spacing: 0.18em;
+    margin-top: 24px !important;
+    margin-bottom: 0 !important;
+    font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", Georgia, serif !important;
 }
 
 /* 暗色主题封面 */
@@ -49,10 +59,16 @@
     color: rgba(255, 255, 255, 0.95) !important;
 }
 
+.navy .book-cover .book-author,
+.coal .book-cover .book-author,
+.ayu .book-cover .book-author {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
 .navy .book-cover .book-subtitle,
 .coal .book-cover .book-subtitle,
 .ayu .book-cover .book-subtitle {
-    color: rgba(255, 255, 255, 0.45) !important;
+    color: rgba(255, 255, 255, 0.4) !important;
 }
 
 html {
